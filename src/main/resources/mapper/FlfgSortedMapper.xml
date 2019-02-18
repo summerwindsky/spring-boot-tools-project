@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.FlfgSortedMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.FlfgSorted">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="boardid" jdbcType="INTEGER" property="boardid" />
+    <result column="fgType" jdbcType="VARCHAR" property="fgtype" />
+    <result column="effectSort" jdbcType="VARCHAR" property="effectsort" />
+    <result column="district" jdbcType="VARCHAR" property="district" />
+    <result column="timelinessDic" jdbcType="VARCHAR" property="timelinessdic" />
+    <result column="postyear" jdbcType="VARCHAR" property="postyear" />
+    <result column="posttime" jdbcType="TIMESTAMP" property="posttime" />
+    <result column="documentNO" jdbcType="VARCHAR" property="documentno" />
+    <result column="issueDeps" jdbcType="LONGVARCHAR" property="issuedeps" />
+  </resultMap>
+</mapper>

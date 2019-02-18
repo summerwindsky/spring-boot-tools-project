@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.TQkwzMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.TQkwz">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="Journal_Id" jdbcType="INTEGER" property="journalId" />
+    <result column="Info_Id" jdbcType="INTEGER" property="infoId" />
+    <result column="Info_Ctitle" jdbcType="VARCHAR" property="infoCtitle" />
+    <result column="Info_Author" jdbcType="VARCHAR" property="infoAuthor" />
+    <result column="Info_AuthorUnit" jdbcType="VARCHAR" property="infoAuthorunit" />
+    <result column="Info_Kind" jdbcType="VARCHAR" property="infoKind" />
+    <result column="Info_Ckeyword" jdbcType="VARCHAR" property="infoCkeyword" />
+    <result column="Info_Csummary" jdbcType="VARCHAR" property="infoCsummary" />
+    <result column="Info_Reference" jdbcType="VARCHAR" property="infoReference" />
+    <result column="Content_Id" jdbcType="INTEGER" property="contentId" />
+    <result column="Info_Remark" jdbcType="LONGVARCHAR" property="infoRemark" />
+    <result column="Content_Txt" jdbcType="LONGVARCHAR" property="contentTxt" />
+  </resultMap>
+
+</mapper>

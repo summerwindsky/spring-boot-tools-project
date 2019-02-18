@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.TXsXsgdMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.TXsXsgd">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="xsfbName" jdbcType="VARCHAR" property="xsfbname" />
+    <result column="xsfbZuiming" jdbcType="VARCHAR" property="xsfbzuiming" />
+    <result column="xsfbZhiyin" jdbcType="VARCHAR" property="xsfbzhiyin" />
+    <result column="xsfbfbyzm" jdbcType="VARCHAR" property="xsfbfbyzm" />
+    <result column="xsfbId" jdbcType="LONGVARCHAR" property="xsfbid" />
+    <result column="xsfbContent" jdbcType="LONGVARCHAR" property="xsfbcontent" />
+    <result column="xsfbBody" jdbcType="LONGVARCHAR" property="xsfbbody" />
+  </resultMap>
+</mapper>

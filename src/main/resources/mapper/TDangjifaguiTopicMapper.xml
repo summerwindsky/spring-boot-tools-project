@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.TDangjifaguiTopicMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.TDangjifaguiTopic">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="siteid" jdbcType="INTEGER" property="siteid" />
+    <result column="boardid" jdbcType="INTEGER" property="boardid" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="Category" jdbcType="VARCHAR" property="category" />
+    <result column="DocumentNO" jdbcType="VARCHAR" property="documentno" />
+    <result column="IssueDepartment" jdbcType="VARCHAR" property="issuedepartment" />
+    <result column="TimelinessDic" jdbcType="VARCHAR" property="timelinessdic" />
+    <result column="EffectivenessDic" jdbcType="VARCHAR" property="effectivenessdic" />
+    <result column="posttime" jdbcType="TIMESTAMP" property="posttime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="CTIME" jdbcType="TIMESTAMP" property="ctime" />
+    <result column="UTIME" jdbcType="TIMESTAMP" property="utime" />
+    <result column="description" jdbcType="LONGVARCHAR" property="description" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="htmlcontent" jdbcType="LONGVARCHAR" property="htmlcontent" />
+  </resultMap>
+</mapper>

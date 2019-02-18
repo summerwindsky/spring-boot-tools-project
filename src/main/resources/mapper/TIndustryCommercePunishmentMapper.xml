@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.TIndustryCommercePunishmentMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.TIndustryCommercePunishment">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="number" jdbcType="VARCHAR" property="number" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="wolters_link" jdbcType="VARCHAR" property="woltersLink" />
+    <result column="institution" jdbcType="VARCHAR" property="institution" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="caseflag" jdbcType="VARCHAR" property="caseflag" />
+    <result column="punish_time" jdbcType="DATE" property="punishTime" />
+    <result column="link" jdbcType="VARCHAR" property="link" />
+    <result column="seachinfo" jdbcType="VARCHAR" property="seachinfo" />
+    <result column="pdf_link" jdbcType="VARCHAR" property="pdfLink" />
+    <result column="pdf_path" jdbcType="VARCHAR" property="pdfPath" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="CTIME" jdbcType="TIMESTAMP" property="ctime" />
+    <result column="UTIME" jdbcType="TIMESTAMP" property="utime" />
+    <result column="law_base" jdbcType="LONGVARCHAR" property="lawBase" />
+    <result column="pdf_format_content" jdbcType="LONGVARCHAR" property="pdfFormatContent" />
+  </resultMap>
+</mapper>
