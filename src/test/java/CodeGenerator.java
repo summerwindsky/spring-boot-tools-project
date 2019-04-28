@@ -19,7 +19,8 @@ import static com.company.project.core.ProjectConstant.*;
 public class CodeGenerator {
     //JDBC配置，请修改为你项目的实际配置
 //    private static final String JDBC_URL = "jdbc:mysql://192.168.99.69:13316/zk2.0?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false";
-    private static final String JDBC_URL = "jdbc:mysql://192.168.99.69:13316/datacenter?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false";
+//    private static final String JDBC_URL = "jdbc:mysql://192.168.99.69:13316/datacenter?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false";
+    private static final String JDBC_URL = "jdbc:mysql://192.168.99.69:13316/jianchawei?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false";
     private static final String JDBC_USERNAME = "root";
     private static final String JDBC_PASSWORD = "hyyd@123.com";
     private static final String JDBC_DIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
@@ -43,6 +44,7 @@ public class CodeGenerator {
 //        genCode("t_industry_commerce_punishment");
 //        genCode("t_court_address");
 //        genCode("t_dangjifagui_topic");
+//        genCode("flfg_sorted");
         genCode("flfg_sorted");
         //genCodeByCustomModelName("输入表名","输入自定义Model名称");
     }
@@ -50,6 +52,7 @@ public class CodeGenerator {
     /**
      * 通过数据表名称生成代码，Model 名称通过解析数据表名称获得，下划线转大驼峰的形式。
      * 如输入表名称 "t_user_detail" 将生成 TUserDetail、TUserDetailMapper、TUserDetailService ...
+     *
      * @param tableNames 数据表名称...
      */
     public static void genCode(String... tableNames) {
@@ -61,6 +64,7 @@ public class CodeGenerator {
     /**
      * 通过数据表名称，和自定义的 Model 名称生成代码
      * 如输入表名称 "t_user_detail" 和自定义的 Model 名称 "User" 将生成 User、UserMapper、UserService ...
+     *
      * @param tableName 数据表名称
      * @param modelName 自定义的 Model 名称
      */
@@ -108,7 +112,7 @@ public class CodeGenerator {
 
         TableConfiguration tableConfiguration = new TableConfiguration(context);
         tableConfiguration.setTableName(tableName);
-        if (StringUtils.isNotEmpty(modelName))tableConfiguration.setDomainObjectName(modelName);
+        if (StringUtils.isNotEmpty(modelName)) tableConfiguration.setDomainObjectName(modelName);
         tableConfiguration.setGeneratedKey(new GeneratedKey("id", "Mysql", true, null));
         context.addTableConfiguration(tableConfiguration);
 
